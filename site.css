@@ -1,0 +1,62 @@
+#mainHeader{
+    text-align: center;
+}
+
+#waitingColTop{
+    background-color: red;
+    margin-bottom: 0;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#processColTop {
+    background-color: yellow;
+    margin-bottom: 0;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#readyColTop {
+    background-color: green;
+    margin-bottom: 0;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#waitingCol{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: red;
+    height: 25rem;
+}
+
+#processCol {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: yellow;
+    height: 25rem;
+}
+
+#readyCol {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: green;
+    height: 25rem;
+}
+
+#waitingList{
+    list-style: none;
+}
+
+.newTasks{
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+}
+
