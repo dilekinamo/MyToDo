@@ -12,12 +12,14 @@ function addNewItem(e){
     a.classList = 'delete-item float-end';
     a.setAttribute('href', '#');
     a.style.backgroundColor="white";
+    a.addEventListener("click",beniSil);
     a.innerHTML = '<i class="bi bi-x-circle"></i>';
     pp.appendChild(a);
 
 }
 function beniSil(e){
 e.preventDefault();
+console.log("beniSil")
 e.target.parentElement.parentElement.remove();
 }
 
