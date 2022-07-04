@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="bootstrap.css" /> -->
+    <link rel="stylesheet" href="bootstrap-icons-1.8.3/bootstrap-icons.css" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css.map">
+    <link rel="stylesheet" href="site.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" /> -->
+    <!-- <link rel="stylesheet" href="bootstrap.bundle.js.map"> -->
+    <title>My ToDo App</title>
+  </head>
+  <body>
+    <div class="container p-3">
+      <h1 id="mainHeader">My ToDo App</h1>
+      <div id="inputToDo">
+        <input
+          type="text"
+          id="inputField"
+          size="50"
+          placeholder="Type in ToDo task"
+        />
+        <button onclick="addNewItem()" id="addButton">Add task</button>
+        <button onclick="deleteAll()" id="deleteAllButton" class="float-end">Hepsini Sil</button>
+      </div>
+    </div>
+
+    <div class="container mt-1">
+      <div class="row row-col-3 gx-5">
+        <div class="col">
+          <div id="waitingColTop" ><h2>Waiting column</h2>
+          </div>
+           <div id="waitingCol" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="col">
+          <div id="processColTop" ><h2>Process Column</h2>
+          </div>
+          <div id="processCol" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="col">
+          <div id="readyColTop" ><h2>Ready Column</h2>
+          </div>
+          <div id="readyCol" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    <script src="bootstrap.bundle.js"></script>
+    <!-- <script src="bootstrap.bundle.js.map"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
