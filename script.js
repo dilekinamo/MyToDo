@@ -15,6 +15,7 @@ function addNewItem(e){
     a.addEventListener("click",beniSil);
     a.innerHTML = '<i class="bi bi-x-circle"></i>';
     pp.appendChild(a);
+    document.getElementById("inputField").value="";
 
 }
 function beniSil(e){
